@@ -1,3 +1,5 @@
+import './Login.css'
+
 function Login(){
 
     const highlights = ['Craft Playlists', 'Real-Time Preview', 'Spotify Integration']
