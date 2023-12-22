@@ -1,2 +1,83 @@
-main {
+/* logoipsum-212 1 */
+.logoipsum{
+    position: absolute;
+    width: 540px;
+    height: 101px;
+    left: 94px;
+    top: 110px;
 }
+
+
+
+.HarmonyHub{
+
+position: absolute;
+left: 22.02%;
+right: -30.69%;
+top: 15.84%;
+bottom: 9.9%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 55.0909px;
+line-height: 67px;
+display: flex;
+align-items: center;
+letter-spacing: 0.08em;
+
+background: linear-gradient(90deg, #46BBC7 3.26%, #4488D8 56.45%, #8768F2 97.83%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+
+.Ellipse {
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    left: 104px;
+    top: 150px;
+
+    background: #39CABD;
+    filter: blur(150px);
+}
+
+.tagLine{
+width: 616px;
+height: 390px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 59px;
+display: flex;
+align-items: center;
+letter-spacing: 0.08em;
+
+color: #3B8DEE;
+}
+
+.bullet-list{
+width: 295px;
+height: 39px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 40px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.08em;
+
+color: #685feb;
+}
+ul{
+    list-style-type: none;
+}
+
