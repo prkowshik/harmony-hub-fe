@@ -81,3 +81,15 @@ ul{
     list-style-type: none;
 }
 
+.Ellipse2{
+position: absolute;
+width: 266px;
+height: 266px;
+left: 821px;
+top: 350px;
+
+background: #9B74EE;
+filter: blur(150px);
+}
+
+

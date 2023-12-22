@@ -21,7 +21,7 @@ function Login(){
                         </li>
                     ))}
                 </ul>
-                
+                <p className="Ellipse2"></p>
             
             </div>
         
