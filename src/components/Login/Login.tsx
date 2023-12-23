@@ -12,7 +12,7 @@ function Login(){
 
                 <p className="Ellipse"></p>
                 <p className="tagLine">Your Personal Sound <br></br> Sanctuary - Craft Playlists, Find Balance</p>
-                <ul className="list-group">
+                <ul className="ul-list">
                     {highlights.map(highlight =>(
                         
                         <li key={highlight} className="bullet-list">

@@ -46,8 +46,10 @@ text-fill-color: transparent;
 }
 
 .tagLine{
-width: 616px;
+width: 550px;
 height: 390px;
+margin-left: 70px;
+
 
 font-family: 'Montserrat';
 font-style: normal;
@@ -79,6 +81,10 @@ color: #685feb;
 }
 ul{
     list-style-type: none;
+}
+.ul-list{
+    margin-top: -50px;
+    margin-left: -50px;
 }
 
 .Ellipse2{
