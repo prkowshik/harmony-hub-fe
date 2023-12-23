@@ -1,6 +1,6 @@
 .login{
     position: relative;
-    width: 1600px;
+    width: 1580px;
     height: 773px;
 
     background: #0F0F0F;
@@ -380,7 +380,79 @@ li img{
     padding: 16px;
 }
 
+.title-div{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 490px;
 
+}
+.title-text{
+    /* HARMONY HUB */
+
+position: absolute;
+left: -17.17%;
+right: 14.57%;
+top: 0%;
+bottom: 22.9%;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 68px;
+line-height: 6px;
+margin-left: -206px;
+
+color: #FFFFFF;
+
+
+}
+.sub-tittle-div{
+    /* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 14px 24px;
+gap: 10px;
+
+position: absolute;
+width: 317px;
+height: 56px;
+left: 54px;
+top: 518px;
+
+border: 4px solid #FFFFFF;
+
+}
+
+.logo{
+    width: 90px;
+    margin-left: 270px;
+    margin-top: -70px;
+}
+.sub-title-text{
+    /* Your Personal Sound Sanctuary */
+
+width: 276px;
+height: 27px;
+
+font-family: 'Noto Sans';
+font-style: italic;
+font-weight: 600;
+font-size: 20px;
+line-height: 100px;
+margin-left: -290px;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
 
 
 

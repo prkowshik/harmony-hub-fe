@@ -6,9 +6,17 @@ function Login(){
     return (
         <>
         <div className="login">
-            <p className='title'>HARMONY HUB</p>
+            
+            <div className='title-div'>
+                <p className='title-text'>HARMONY HUB</p>
+                <img className="logo" src="/logo-white.svg" alt="" />
+                <div className='sub-title-div'><p className='sub-title-text'>Your Personal Sound Sanctuary</p></div>
+                <img src="/line.svg" alt="" />
+            </div>
+
             <p className='Ellipse1'></p>
             <p className='Ellipse2'></p>
+
             <div className='login-frame1'>
                 <div className='login-frame2'>
                     <div className='login-frame3'>
@@ -47,10 +55,6 @@ function Login(){
                 </div>
 
             </div>
-            
-           
-
-        
         </div>
     
     </>
