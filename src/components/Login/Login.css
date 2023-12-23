@@ -98,4 +98,14 @@ background: #9B74EE;
 filter: blur(150px);
 }
 
+.Ellipse3{
+position: absolute;
+width: 250px;
+height: 289px;
+left: 1200px;
+top: -26px;
+
+background: #39CABD;
+filter: blur(150px);
+}
 

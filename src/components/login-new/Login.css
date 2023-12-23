@@ -1,0 +1,56 @@
+.login{
+    position: relative;
+    width: 1600px;
+    height: 773px;
+
+    background: #0F0F0F;
+}
+.Ellipse1{
+    /* Ellipse 1 */
+
+    position: absolute;
+    width: 302px;
+    height: 302px;
+    left: 821px;
+    top: 37px;
+
+    background: linear-gradient(180deg, #530061 0%, #0D0A30 100%);
+    border-radius: 50%;
+
+}
+.Ellipse2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 1220.84px;
+    top: 530.82px;
+
+    background: linear-gradient(180deg, #300061 0%, #0A1030 100%);
+    transform: rotate(-28.5deg);
+    border-radius: 50%;
+}
+
+.login-frame1{
+    position: absolute;
+    width: 380px;
+    height: 636px;
+    right: 228px;
+    top: 60px;
+    /* top: calc(50% - 796px/2 + 6px); */
+
+    /* Glass1 Fill-Carey
+
+    Make ya fill as glass
+    */
+    background: linear-gradient(321.23deg, rgba(191, 191, 191, 0.062) 5.98%, rgba(0, 0, 0, 0) 66.28%), rgba(0, 0, 0, 0.14);
+    box-shadow: -8px 4px 5px rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(26.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+}
+
+
+
+
+
+
