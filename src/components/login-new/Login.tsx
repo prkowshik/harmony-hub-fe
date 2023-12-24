@@ -1,8 +1,21 @@
 import './Login.css'
+import {Link , useNavigate} from 'react-router-dom';
 
 function Login(){
 
-    const highlights = ['Craft Playlists', 'Real-Time Preview', 'Spotify Integration']
+
+    const navigate = useNavigate();
+
+
+    function loginwithSpotify(){
+
+
+        navigate('home');
+
+    }
+
+
+
     return (
         <>
         <div className="login">
@@ -38,7 +51,7 @@ function Login(){
                             <p className='remember-me-text'>Remember me</p>
                         </div>
                         <div className='login-bt-fp'>
-                            <input className="login-bt-div"  type="button" value="Login" />
+                            <input className="login-bt-div"  type="button" value="Login" onClick={loginwithSpotify}  />
                             <span className='fp-text'>Forgot password ?</span>
                         </div>
 
