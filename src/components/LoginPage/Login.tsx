@@ -1,39 +1,10 @@
 import './Login.css'
-import {Link , useNavigate} from 'react-router-dom';
-import {spotifyLoginUrl, getTokenfromUrl} from '../../utility/spotify-api';
+import {spotifyLoginUrl} from '../../utility/spotify-api';
 import SpotifyWebApi from 'spotify-web-api-js';
-import { useEffect, useState } from 'react';
 
 
 function Login(){
     const spotify = new SpotifyWebApi();
-    const [spotifyToken, setSpotifyToken] = useState("")
-
-
-    const navigate = useNavigate();
-
-    useEffect(()=>{
-        console.log("This is what we derived from URL: ", getTokenfromUrl())
-        const spotifyToken = getTokenfromUrl().code;
-        console.log(spotifyToken)
-        setSpotifyToken(spotifyToken)
-        // if(spotifyToken != null){
-        //     console.log("navigating");
-        //     navigate('home');
-        // }
-        
-    
-    });
-
-
-    function loginwithSpotify(){
-        console.log(spotifyLoginUrl)    
-        
-
-    }
-
-
-
     return (
         <>
         <div className="login">
