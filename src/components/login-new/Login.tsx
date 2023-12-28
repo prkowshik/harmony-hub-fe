@@ -17,13 +17,18 @@ function Login(){
         const spotifyToken = getTokenfromUrl().code;
         console.log(spotifyToken)
         setSpotifyToken(spotifyToken)
+        // if(spotifyToken != null){
+        //     console.log("navigating");
+        //     navigate('home');
+        // }
+        
     
     });
 
 
     function loginwithSpotify(){
         console.log(spotifyLoginUrl)    
-        navigate('home');
+        
 
     }
 
@@ -64,7 +69,8 @@ function Login(){
                             <p className='remember-me-text'>Remember me</p>
                         </div>
                         <div className='login-bt-fp'>
-                            <input className="login-bt-div"  type="button" value="Login" onClick={loginwithSpotify}  />
+                            {/* <input className="login-bt-div"  type="button" value="Login" onClick={loginwithSpotify}  /> */}
+                            <a className="login-bt-div" href={spotifyLoginUrl} id="signInButton"> Login with Spotify</a>
                             <span className='fp-text'>Forgot password ?</span>
                         </div>
 
@@ -76,7 +82,7 @@ function Login(){
                            <li><img src="/fb-icon.svg"></img></li> 
                            <li><img src="/github.svg"></img></li> 
                         </ul>
-                        <a href={spotifyLoginUrl} id="signInButton"> Login with Spotify</a>
+                        
                     </div>
                     </div>
                 </div>
