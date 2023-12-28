@@ -5,10 +5,8 @@ import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
 import { useState } from 'react';
 
 function NavigationBar(){
-    const [selectedItem, setSelectedItem] = useState(null);
 
     const handleItemClick = (key, link) =>{
-        setSelectedItem(key);
         {window.location.pathname=link}
     }
 
