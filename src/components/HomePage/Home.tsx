@@ -1,5 +1,5 @@
 import './Home.css'
-import NavigationBar from '../SideBar/SideBar';
+import SideBar from '../SideBar/SideBar';
 
 function Home(){
 
@@ -7,7 +7,7 @@ function Home(){
     
     return (
         <>
-        <NavigationBar/>
+        <SideBar/>
         <div className='home-div'>
             <h1>Hello from Home Page </h1>
         </div>

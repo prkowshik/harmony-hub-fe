@@ -2,8 +2,15 @@ import './SideBar.css'
 import CreateIcon from '@material-ui/icons/Create';
 import MicIcon from '@material-ui/icons/Mic';
 import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
+import { useState } from 'react';
 
 function NavigationBar(){
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const handleItemClick = (key, link) =>{
+        setSelectedItem(key);
+        {window.location.pathname=link}
+    }
 
     const NavBarData =[
         {
@@ -45,7 +52,8 @@ function NavigationBar(){
                         <ul className='sidebarlist'>
                             {NavBarData.map((val, key)=>{
                                 return (
-                                    <li className="row" key={key} onClick={() => {window.location.pathname=val.link}}>
+                                    <li className="row" 
+                                     id={window.location.pathname == val.link? "active": ""} key={key} onClick={() => handleItemClick(key, val.link)}>
                                         <span id="icon">{val.icon}  {val.title}</span>
                                     </li>
 

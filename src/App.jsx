@@ -1,6 +1,7 @@
 import './App.css'
 import Login from './components/LoginPage/Login'
 import Home from './components/HomePage/Home'
+import Playlist from './components/CreatePlaylist/Playlist'
 import {Routes, Route} from 'react-router-dom';
 import {getTokenfromUrl} from './utility/spotify-api';
 import { useEffect, useState } from 'react';
@@ -19,6 +20,7 @@ export default function App() {
       <Routes>
           <Route exact path="/" element={<Login/>}></Route>
           <Route path="home" element={<Home/>} ></Route>
+          <Route path="/create/playlist" element={<Playlist/>} ></Route>
       </Routes>
 
     </div>

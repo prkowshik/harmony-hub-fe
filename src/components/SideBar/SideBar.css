@@ -213,6 +213,9 @@ flex-grow: 0;
     background: linear-gradient(90.57deg, #628EFF 9.91%, #8740CD 53.29%, #580475 91.56%);
     border-radius: 12px;
 }
-
+.sidebarlist #active{
+    background: linear-gradient(90.57deg, #628EFF 9.91%, #8740CD 53.29%, #580475 91.56%);
+    border-radius: 12px;
+}
 
 
