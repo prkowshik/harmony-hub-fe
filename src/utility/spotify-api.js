@@ -28,30 +28,30 @@ export const getTokenfromUrl = () =>{
 }
 
 export const getAccessToken = async (code) =>{
-    // let reqBody = {
-    //       code: code,
-    //       redirect_uri: redirectUri,
-    //       grant_type: 'authorization_code'
-    // }
-    // let headers = {
-    //     'content-type': 'application/x-www-form-urlencoded',
-    //     Authorization: 'Basic ' + (encodeURIComponent(clientId + ':' + clientSecret))
-    // }
+    let reqBody = {
+          code: code,
+          redirect_uri: redirectUri,
+          grant_type: 'authorization_code'
+    }
+    let headers = {
+        'content-type': 'application/x-www-form-urlencoded',
+        Authorization: 'Basic ' + (encodeURIComponent(clientId + ':' + clientSecret))
+    }
         
 
-    let reqBody = JSON.stringify({
-        code: code,
-        grant_type: 'authorization_code',
-        redirect_uri: redirectUri,
-        client_id: clientId,
-        client_secret: clientSecret
-    });
-    let headers = {
-        "Access-Control-Allow-Headers": "*",
-    }
+    // let reqBody = JSON.stringify({
+    //     code: code,
+    //     grant_type: 'authorization_code',
+    //     redirect_uri: redirectUri,
+    //     client_id: clientId,
+    //     client_secret: clientSecret
+    // });
+    // let headers = {
+    //     "Access-Control-Allow-Headers": "*",
+    // }
     console.log("headers...", headers);
 
-    const response = await axios.post("api/token", reqBody, {
+    const response = await axios.post(tokenUrl, reqBody, {
         headers: headers,
       });
 

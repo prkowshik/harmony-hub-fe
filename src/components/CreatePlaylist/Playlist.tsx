@@ -25,7 +25,7 @@ export default function Playlist(){
         <TopBar/>
         <div className='playlist-div'>
             <Stack direction="row" spacing={5} id="stack-tab">
-                <TextField id="text-bg" label="Enter the Query"  style = {{width: 300}}/>
+                <TextField id="text-bg" label="Enter the Genre"  style = {{width: 300}}/>
                 {/* <InputLabel id="dropdown-label">Age</InputLabel> */}
                 <Select
                 id="text-bg"
@@ -35,7 +35,7 @@ export default function Playlist(){
                 style = {{width: 300}}
                 > 
                 <MenuItem value={"album"}>Album</MenuItem>
-                <MenuItem value={"artist"}>Artist</MenuItem>
+                {/* <MenuItem value={"artist"}>Artist</MenuItem> */}
                 <MenuItem value={"track"}>Track</MenuItem>
                 <MenuItem value={"show"}>Show</MenuItem>
                 <MenuItem value={"audiobook"}>Audiobook</MenuItem>
