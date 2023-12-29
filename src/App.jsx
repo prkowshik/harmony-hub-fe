@@ -3,13 +3,13 @@ import Login from './components/LoginPage/Login'
 import Home from './components/HomePage/Home'
 import Playlist from './components/CreatePlaylist/Playlist'
 import {Routes, Route} from 'react-router-dom';
-import {getTokenfromUrl} from './utility/spotify-api';
+import {getTokenfromUrl, getAccessToken} from './utility/spotify-api';
 import { useEffect, useState } from 'react';
 
 export default function App() {
   useEffect(()=>{
     console.log("This is what we derived from URL: ", getTokenfromUrl())
-    const spotifyToken = getTokenfromUrl().code;
+    const spotifyToken = getAccessToken(getTokenfromUrl().code);
     console.log(spotifyToken)
    
 

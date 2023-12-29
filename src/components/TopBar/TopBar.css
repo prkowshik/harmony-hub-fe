@@ -1,0 +1,22 @@
+.top-bar-div{
+    height: 60px;
+    background: #050505;
+    /* box-shadow: 0px 4px 20px rgb(240, 235, 235); */
+ 
+}
+#stack-id{
+    margin-left: 1380px;
+}
+#avatar{
+    margin-top: 15px;
+    background: #356d4c;
+    box-shadow: 0px 3px 3px rgb(182, 223, 200);
+}
+#chip-id{
+    margin-top: 20px;
+    background: #356d4c;
+    width: 100px;
+    box-shadow: 0px 3px 3px rgb(182, 223, 200);
+    font-size: 16px;
+    color: white;
+}
