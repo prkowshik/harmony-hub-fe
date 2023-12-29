@@ -1,10 +1,10 @@
 import './Login.css'
 import {spotifyLoginUrl} from '../../utility/spotify-api';
-import SpotifyWebApi from 'spotify-web-api-js';
+import TextField from '@mui/material/TextField';
 
 
 function Login(){
-    const spotify = new SpotifyWebApi();
+
     return (
         <>
         <div className="login">
@@ -29,19 +29,16 @@ function Login(){
                             <div className='username'><p className='username-text'>Username</p></div>
                         </div> */}
                         <form className='credentials'>
-                        <div className='username'><p className='username-text'>Username</p></div>
-                        <div className='password'>
-                            <p className='password-text'>Password</p>
-                            <img src="/closedeye.svg"></img>
-                            
-                        </div>
+                        <TextField id="cred-bg" label="Username"  placeholder="Username" style = {{width: 300}}/>
+                        <TextField id="cred-bg" label="Password" placeholder="Password" type="password" style = {{width: 300}}/>
+                       
                         <div className='reminder-div'>
                             <input className="checkbox-div" type="checkbox" />
                             <p className='remember-me-text'>Remember me</p>
                         </div>
                         <div className='login-bt-fp'>
                             {/* <input className="login-bt-div"  type="button" value="Login" onClick={loginwithSpotify}  /> */}
-                            <a className="login-bt-div" href={spotifyLoginUrl} id="signInButton"> Login with Spotify</a>
+                            <a className="login-bt-div" href={spotifyLoginUrl} id="signInButton">Login with Spotify</a>
                             <span className='fp-text'>Forgot password ?</span>
                         </div>
 
