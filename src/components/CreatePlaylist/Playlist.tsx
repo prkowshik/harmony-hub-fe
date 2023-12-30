@@ -7,15 +7,16 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import {spotifyAcessTokens} from '../../utility/SpotifyAuth';
 
+export default function Playlist(props){
+  console.log("playlist...",spotifyAcessTokens);
 
-export default function Playlist(){
-
-    const [age, setAge] = useState('');
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value as string);
-  };
+    const [type, setType] = useState('');
+    console.log(props.userName);
+    const handleChange = (event: SelectChangeEvent) => {
+      setType(event.target.value as string);
+    };
 
 
     
@@ -29,8 +30,8 @@ export default function Playlist(){
                 {/* <InputLabel id="dropdown-label">Age</InputLabel> */}
                 <Select
                 id="text-bg"
-                value={age}
-                label="Age"
+                value={type}
+                label="Type"
                 onChange={handleChange}
                 style = {{width: 300}}
                 > 

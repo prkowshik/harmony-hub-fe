@@ -13,4 +13,4 @@ export const spotifyAuthInfo ={
 
 export const spotifyLoginUrl = `${spotifyAuthInfo.authEndpoint}?client_id=${spotifyAuthInfo.clientId}&response_type=code&scope=${spotifyAuthInfo.scopes.join("%20")}&redirect_uri=${spotifyAuthInfo.redirectUri}&show_dialog=true`
 
-
+export const spotifyAcessTokens = {}
