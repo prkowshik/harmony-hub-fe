@@ -1,5 +1,5 @@
 import './Login.css'
-import {spotifyLoginUrl} from '../../utility/spotify-api';
+import {spotifyLoginUrl} from '../../utility/SpotifyAuth';
 import TextField from '@mui/material/TextField';
 
 
