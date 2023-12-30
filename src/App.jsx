@@ -19,38 +19,39 @@ export default function App() {
       const params = queryString.parse(window.location.search);
       const code = params.code;
 
-      const authHeader = btoa(`${spotifyAuthInfo.clientId}:${spotifyAuthInfo.clientSecret}`);
-      const data = {
-        grant_type: 'authorization_code',
-        code: code,
-        redirect_uri: spotifyAuthInfo.redirectUri,
-      };
+      if(typeof(code) !== 'undefined'){
+        const authHeader = btoa(`${spotifyAuthInfo.clientId}:${spotifyAuthInfo.clientSecret}`);
+        const data = {
+          grant_type: 'authorization_code',
+          code: code,
+          redirect_uri: spotifyAuthInfo.redirectUri,
+        };
 
-      try {
-        const response = await axios.post(spotifyAuthInfo.tokenUrl, queryString.stringify(data), {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            Authorization: `Basic ${authHeader}`,
-          },
+        try {
+          const response = await axios.post(spotifyAuthInfo.tokenUrl, queryString.stringify(data), {
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+              Authorization: `Basic ${authHeader}`,
+            },
+          });
+
+          const accessToken = response.data.access_token;
+          setSpotifyAccessToken(accessToken);
+          
+          spotifyClient.setAccessToken(accessToken);
+        } catch (error) {
+          console.error('Error exchanging code for token:', error);
+        }
+
+        handleCallback();
+    
+        spotifyClient.getMe().then((user)=>{
+            console.log("My data...",user);
         });
 
-        const accessToken = response.data.access_token;
-        setSpotifyAccessToken(accessToken);
-        // Step 4: Use the access token (e.g., make API requests to Spotify)
-        
-        spotifyClient.setAccessToken(accessToken);
-      } catch (error) {
-        console.error('Error exchanging code for token:', error);
       }
+      
     };
-
-    handleCallback();
-    
-    spotifyClient.getMe().then((user)=>{
-        console.log("My data...",user);
-    });
-   
-
   });
 
   return (
